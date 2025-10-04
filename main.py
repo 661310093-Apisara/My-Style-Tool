@@ -23,9 +23,11 @@ class MyStyleToolDialog(QtWidgets.QDialog):
 		self.imagePixmap = QtGui.QPixmap(f'{ROOT_RESOURCE_DIR}/image/cat.png')
 		self.mainLayout.addWidget(self.imageLabel)
 		scaled_pixmap = self.imagePixmap.scaled(
-			QtCore.QSize(120,120),
+			QtCore.QSize(120,12),
 			QtCore.Qt.KeepAspectRatio,
 			QtCore.Qt.SmoothTransformation
+
+
 			)
 		self.imageLabel.setPixmap(scaled_pixmap)
 		self.imageLabel.setAlignment(QtCore.Qt.AlignCenter)
